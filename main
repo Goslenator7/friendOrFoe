@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+
+public static class Kata {
+  public static IEnumerable<string> FriendOrFoe (string[] names) {
+    // Make new list for friends (names of length 4)
+    List<string> friends = new List<string>();
+    
+    // Loop through each name in names array
+    foreach (string name in names) {
+      // if the length of the name is 4, add it to new friends array
+      if (name.Length == 4) {
+        friends.Add(name);
+      }
+    }
+    return friends;
+  }
+}
